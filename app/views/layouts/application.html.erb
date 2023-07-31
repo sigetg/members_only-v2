@@ -14,7 +14,13 @@
     <% flash.each do |name, msg| %>
       <%= content_tag :div, msg, class: name %>
     <% end %>
-    <%= current_user.email %>
+    <% if user_signed_in? %>
+      <%= form_tag(destroy_user_session_path, method: :delete) do %>
+        <%= submit_tag 'Sign Out' %>
+      <% end %>
+    <% else %>
+      <%= link_to 'Sign In', new_user_session_path %>
+    <% end %>
     <%= yield %>
   </body>
 </html>
