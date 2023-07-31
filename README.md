@@ -1,24 +1,13 @@
-# README
+# Memebers_Only-v2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple posting app with accounts created in conjunction with the Odin Project
 
-Things you may want to cover:
+* Run on Ruby version 3.2.2
 
-* Ruby version
+* Uses devise to set up user accounts, authentication and authorization
 
-* System dependencies
+* Users can submit posts, edit and delete their own posts, and view creators of other posts only when signed in.
 
-* Configuration
+* Devise allows for forgotten passwords, sign in, sign out, user rememberance, and other features.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* (Its v2 because I messed up the first version)
